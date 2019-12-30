@@ -16,7 +16,9 @@ before_script:
   ##
   ## Run ssh-agent (inside the build environment)
   ##
-  - eval $(ssh-agent -s)  
+  - eval $(ssh-agent -s)
+  - whoami
+  - pwd
 
 after_script:
   - echo "After script section"
