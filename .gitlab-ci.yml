@@ -21,6 +21,10 @@ before_script:
   - pwd
   - ls -al
   - 'which git || ( apt-get update -y && apt-get install git -y )'
+  - which git
+  - git config --global user.email "charlton@usgs.gov"
+  - git config --global user.name "Gitlab CI"
+  - git config --global --list
 
 after_script:
   - echo "After script section"
