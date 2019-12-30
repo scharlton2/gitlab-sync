@@ -19,6 +19,8 @@ before_script:
   - eval $(ssh-agent -s)
   - whoami
   - pwd
+  - ls -al
+  - which git
 
 after_script:
   - echo "After script section"
