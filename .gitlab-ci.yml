@@ -20,7 +20,7 @@ before_script:
   - whoami
   - pwd
   - ls -al
-  - which git
+  - 'which git || ( apt-get update -y && apt-get install git -y )'
 
 after_script:
   - echo "After script section"
